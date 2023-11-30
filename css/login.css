@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+    background-image: url("man-washing-his-car-garage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+
+}
+
+body::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.322);
+    z-index: -1;
+}
+
+body h2 {
+    font-size: 30px;
+    color: white;
+}
+
+body form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+body form input {
+    border: none;
+    border-bottom: 1px solid brown;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    color: white    ;
+}
+
+body form input::placeholder {
+    color: white;
+}
+
+body form button {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    
+}
+
+body form button:hover {
+    background-color: transparent;
+    border: 1px solid brown;
+
+}
+
+body form a {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    background-color: brown;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+body form a:hover {
+    background-color: transparent;
+    border: 1px solid brown;
+
+}
